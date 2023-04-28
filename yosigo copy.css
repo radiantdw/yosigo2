@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+*{margin:0; padding: 0;}
+body.html{font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: bottom;
+}
+address{font-style: normal;}
+
+#wrap{
+  width: 100%;
+  min-width: 1100px;
+  /* position: relative; */
+}
+.boxalign{
+  width: 1100px; margin: auto;
+}
+header{
+  padding: 1.5rem 1.5rem;
+  width: 1600px;
+  height: 100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+}
+nav{
+  display: flex;
+  gap: 6rem;
+  color: white;
+}
+nav div{
+  border-bottom: 3px solid transparent;
+  margin-top: 50px;
+}
+nav div a{
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 0.6rem;
+}
+nav div:hover{
+  color: black;
+  border-bottom: 4px solid;
+}
+
+main{
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+}
+.mbg{
+  background: url(./yosigo\ bg.psb.png);
+  width: 100%;
+  height: 600px;
+  transition: .7s;
+}
+.mtext{
+  background: #000000a8;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  bottom: 0;
+  
+}
+.mtext h1 a img{
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.mtext h2{
+  font-size: 3rem;
+  padding-top: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.mtext span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  margin: 1rem 0;
+  border-radius: 50%;
+  transition: .7s;
+  margin-left: 55px;
+  
+}
+.mtext p{
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  /* padding: 41px; */
+  margin-left: 50px;
+  font-style: bold;
+}
+.mtext>a{
+  position: absolute;
+  display: inline-block;
+  border: 2px solid;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-left: 50px;
+}
+.mtext>a:hover{
+  background: #ffffff1a;
+}
+main:hover .mbg{
+  transform: scale(1.2);
+}
+/* main:hover .mtext{
+  left: 10%;
+  padding: 4rem;
+} */
+main:hover span{
+  background: white;
+  /* width: 50px; */
+  border-radius: 0;
+  height: 150px;
+}
+
+
+/* SECTION */
+section{
+  padding: 5rem 0;
+}
+section ul{
+  display: flex;
+  gap: 25px;
+}
+section ul li{
+  width: 350px;
+}
+section ul li:first-child{
+  background: #8bbaa3;
+  height: 360px;
+  padding: 30px;
+  width: 290px;
+}
+section ul li h3{
+  font-size: 1.9rem;
+  margin-top: 1rem;
+}
+section ul li h6{
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+section ul li>span{
+  display: block;
+  height: 80px;
+}
+section ul li p{
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+}
+section ul li a{display: block;
+}
+section ul li a span{
+  display: block;
+  position: absolute;
+}
+.imgbox img{
+  width: 350px;
+  height: 420px;
+}
+section ul li a .textbox{
+  width: 350px;
+  margin-top: 300px;
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+  transition: .7s;
+}
+
+section:hover ul li a .textbox{
+  margin-top: 150px;
+  overflow: hidden;
+}
+.textbox{
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.textbox strong{
+  display: block;
+  font-size: 1.5rem;
+}
+.textbox p{
+  font-size: 1.2rem;
+  margin-top: 55px;
+  width: 100%;
+  overflow: hidden;
+}
+.textbox .whycover{
+  display: flex;
+  margin-top: 5.3rem;
+}
+section li:hover .wcbg{
+  background-position: right;
+}
+
+
+/* FOOTER */
+footer{
+  background-color: #426e55;
+  padding: 4rem 0;
+}
+footer ul{
+  display: flex;
+  width: 700px;
+  margin: auto;
+  gap: 4rem;
+}
+footer ul li a{
+  display: block;
+  font-size: 1rem;
+}
+footer address{
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+}
