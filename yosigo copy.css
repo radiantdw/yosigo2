@@ -176,18 +176,18 @@ section ul li a .textbox{
   font-size: 1.3rem;
   color: white;
   text-align: center;
-  transition: .7s;
+  /* transition: .7s; */
 }
 
-section:hover ul li a .textbox{
+/* section:hover ul li a .textbox{
   margin-top: 150px;
   overflow: hidden;
-}
-.textbox{
+} */
+/* .textbox{
   background: rgba(0, 0, 0, 0.3);
   padding-top: 25px;
   padding-bottom: 20px;
-}
+} */
 .textbox strong{
   display: block;
   font-size: 1.5rem;
